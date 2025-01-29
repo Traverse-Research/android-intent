@@ -5,7 +5,8 @@ mod extra;
 pub use extra::Extra;
 
 mod intent;
-pub use intent::Intent;
+pub use intent::{Intent, IntentBuilder};
+
 use jni::{JNIEnv, JavaVM};
 
 /// Run 'f' with the current [`JNIEnv`] from [`ndk_context`].
